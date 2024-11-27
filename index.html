@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+// <!-- 1) wap to find min or max first in a given input
+// a=28345
+// output: min is first -->
+
+
+ let a=28345;
+ let b=String(a)
+ let minvalue=Infinity;
+ for(i of b){
+    if(i<minvalue){
+        minvalue=i;
+       }
+ }
+        console.log(minvalue);
+
+
+
+
+
+//Max value 
+
+
+let c=28345;
+let d=String(c)
+let maxvalue=d[0];
+for(i of d){
+    if(i>maxvalue){
+        maxvalue=i;
+        }
+}
+        console.log(maxvalue);
+
+
+
+
+
+
+// write a function to generate random otp
+
+function generateOTP() { 
+  
+  let digits = '0123456789'; 
+  let OTP = ''; 
+  let len = digits.length 
+  for (let i = 0; i < 4; i++) { 
+      OTP += digits[Math.floor(Math.random() * len)]; 
+  } 
+   
+  return OTP; 
+} 
+
+console.log("OTP of 4 digits: ") 
+console.log(generateOTP());
+
+    </script>
+</body>
+</html>
